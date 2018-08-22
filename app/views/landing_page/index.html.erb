@@ -1,18 +1,23 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>StartupFoodtech</title>
+<!-- On voit le header en premier -->
 
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <%= favicon_link_tag "fav.png" %>
+<div class="head">
+	<%=render 'shared/header' %>
+</div>	
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<div class="container body">
 
-  <body>
-    <%= yield %>
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-  </body>
-</html>
+<!-- Puis on voit la section carousel -->
+	
+<section id="section1" class="home">
+	<%=render 'shared/carousel' %>
+</section>
+
+<!-- Ensuite on voit la page menu -->
+
+<section id="section2" class="home">
+	<%=render 'shared/menu' %>
+</section>
+
+
+</div>	
+
