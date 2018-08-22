@@ -1,15 +1,23 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>StartupFoodtech</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<!-- On voit le header en premier -->
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<div class="head">
+  <%=render 'shared/header' %>
+</div>  
 
-  <body>
-    <%= yield %>
-  </body>
-</html>
+<div class="container body">
+
+<!-- Puis on voit la section carousel -->
+  
+<section id="section1" class="home">
+  <%=render 'shared/carousel' %>
+</section>
+
+<!-- Ensuite on voit la page menu -->
+
+<section id="section2" class="home">
+  <%=render 'shared/menu' %>
+</section>
+
+
+</div>  
+
