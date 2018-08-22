@@ -14,10 +14,3 @@
  *= require_self
  */
 
-body
-{
-	color:red;
-	font-family: "freight-sans-pro";
-	background-image: <%= image_tag 'fondecran.png' %>; 
-
-}
